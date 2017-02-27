@@ -1,0 +1,182 @@
+@charset "utf-8";
+body {
+    padding: 0;
+    margin: 0;
+    background: #dedede;
+    font-size: 1em;
+}
+
+h1, h2, h4, h5 {
+    padding: 0;
+    margin: 0;
+}
+
+/*头部*/
+header {
+    width: 99.85%;
+    height: 3.75em;
+    background: #333333;
+    margin-bottom: 1.25em;
+    /*clear 属性规定元素的哪一侧不允许其他浮动元素。*/
+    clear: both;
+}
+
+header h1 {
+    width: 16em;
+    height: 3.75em;
+    background: url("../image/1.png") no-repeat 5% 4%;
+    text-indent: -9999px;
+    float: left;
+}
+
+header ul {
+    float: right;
+    margin-top: 1.25em;
+    padding-right: 1.25em;
+
+}
+
+header ul li {
+    float: left;
+    font-size: 0.75em;
+}
+
+header ul li a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    width: 7em;
+}
+
+header ul li a:hover {
+    color: #ACACAC;
+}
+
+/*文章*/
+article {
+    background: #fff;
+    width: 93%;
+    margin: 0 auto;
+    margin-bottom: 2.5em;
+    padding: 1.375em;
+    border: 1px solid #848484;
+    /*wbox-shadow 属性向框添加一个或多个阴影*/
+    box-shadow: 2px 2px 0px #848484;
+    clear: both;
+}
+
+article h4, h5 {
+    color: #676B6E;
+}
+
+article h5 {
+    margin-top: 0.375em;
+    /*font-weight 属性设置文本的粗细*/
+    font-weight: normal;
+}
+
+article p {
+    font-size: 0.875em;
+    /*text-indent 将段落的第一行缩进*/
+    text-indent: 2px;
+}
+
+/*图片*/
+article figure {
+    width: 7.5em;
+    height: 7.875em;
+    border: 1px solid #CDCDCD;
+}
+
+article figure img {
+    border: 0;
+    display: block;
+    width: 6.25em;
+    height: 5em;
+    margin: 0 auto;
+}
+
+article figure figcaption {
+    text-align: center;
+    line-height: 1.875em;
+}
+/*表格*/
+article table{
+    width: 100%;
+    /*border-spacing 属性设置相邻单元格的边框间的距离*/
+    border-spacing: 0;
+    /*border-collapse 属性设置表格的边框是否被合并为一个单一的边框，*/
+    border-collapse: collapse;
+    text-align: left;
+}
+article table,table th,table td{
+    border:1px solid #ccc;
+    line-height: 1.625em;
+    padding: 0.25em;
+}
+article table th{
+    background: #333;
+    color: #fff;
+}
+article table tfoot{
+    background: #ccc;
+    font-weight: bold;
+}
+/*表单*/
+article aside{
+    margin-bottom: 0;
+}
+article aside h4{
+    color: #000;
+    border-left: 3px solid #ccc;
+    padding-left: 0.625em;
+    line-height: 33px;
+    height: 33px;
+}
+article aside form{
+    width: 100%;
+    font-size: 0.75em;
+}
+article aside form fieldset{
+    width: 90%;
+    margin-left: 3.5%;
+    border: 0;
+}
+article aside form p span{
+    display: inline-block;
+    width: 20%;
+    text-align: right;
+    margin-right: 0.5em;
+    vertical-align: top;
+}
+article aside form p small{
+    color: #666;
+    display: block;
+    font-size: 0.75em;
+    line-height: 34px;
+    margin-left: 20.375em;
+}
+article aside form textarea{
+    width: 50%;
+}
+article aside form button{
+    background: #3355D0;
+    color: #fff;
+    font-weight: bold;
+    width: 98%;
+    border: 0;
+    height: 1.875em;
+    border-radius: 0.25em;
+    /*cursor 属性规定要显示的光标的类型*/
+    cursor:pointer;
+}
+/*页面底部*/
+footer{
+    background: #000;
+    width: 100%;
+    height: 3em;
+    color: #fff;
+    text-align: center;
+    padding-top: 1em;
+    font-size: 0.875em;
+}
